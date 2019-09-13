@@ -1,0 +1,3 @@
+*.txt text eol=crlf diff=sjis
+*.bat text eol=crlf diff=sjis
+*.cs text eol=crlf diff=cp932

@@ -1,0 +1,7 @@
+@powershell -NoProfile -ExecutionPolicy Unrestricted "$s=[scriptblock]::create((gc \"%~f0\"|?{$_.readcount -gt 1})-join\"`n\");&$s" %*&goto:eof
+
+$csArgs = $args
+$csArgs[0] = $null
+$csArgs = $csArgs -ne $null
+
+$src = @'
