@@ -1,8 +1,0 @@
-
-'@
-
-
-Add-Type -TypeDefinition $src -Language CSharp -ReferencedAssemblies System.Windows.Forms
-
-$Result = [BatCs]::Entry($csArgs)
-exit $Result
